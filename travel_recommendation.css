@@ -245,3 +245,11 @@ button {
 .result-item a {
     padding-left: 10px;
 }
+
+
+
+.result-item {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}

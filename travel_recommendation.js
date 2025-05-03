@@ -1,12 +1,27 @@
 function thankyou() {
-    //alert('Thank you for contacting us!');
+    alert('Thank you for contacting us!');
     // Optionally reset form
     document.querySelector('form').reset();
 }
 
+
+document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('btnReset').addEventListener('click', function() {
     document.getElementById('results').innerHTML = '';
 });
+
+    });
+
+
+
+
+
+if (!data) {
+    console.error('Data not yet fetched');
+    return;
+}
+
+
 
 
 
