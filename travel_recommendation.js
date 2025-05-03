@@ -28,8 +28,8 @@ let datas;
 fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(jsonData => {
-        data = jsonData;
-        console.log(data);
+        datas = jsonData;
+        console.log(datas);
 
         // Enable buttons
         document.getElementById('btnSearch').disabled = false;
@@ -41,11 +41,11 @@ fetch('travel_recommendation_api.json')
             let results = [];
 
             if (input === "beach" || input === "beaches") {
-                results = data.beaches;
+                results = datas.beaches;
             } else if (input === "temples" || input === "temple") {
-                results = data.temples;
+                results = datas.temples;
             } else if (input === "country" || input === "countries") {
-                data.countries.forEach(country => {
+                datas.countries.forEach(country => {
                     country.cities.forEach(city => {
                         results.push(city);
                     });
@@ -120,8 +120,8 @@ function displayResults(results) {
     console.log("Current time in Lagos:", LagosTime);
 
 
-console.log('Search input:', input);
-console.log('Results:', results);
+// console.log('Search input:', input);
+// console.log('Results:', results);
 
 
 
