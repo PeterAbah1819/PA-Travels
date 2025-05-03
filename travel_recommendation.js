@@ -24,7 +24,7 @@ document.getElementById('btnReset').addEventListener('click', function() {
 
 let data;
 
-fetch('travel.json')
+fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(jsonData => {
         data = jsonData;
