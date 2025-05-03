@@ -22,17 +22,44 @@ document.getElementById('btnReset').addEventListener('click', function() {
 
 
 
+
 let datas;
 
 fetch('travel_recommendation_api.json')
     .then(response => response.json())
     .then(jsonData => {
         data = jsonData;
-        console.log(data)
+        console.log(data);
+
+        // Enable buttons
         document.getElementById('btnSearch').disabled = false;
         document.getElementById('btnReset').disabled = false;
+
+        // Setup search button click AFTER data is available
+        document.getElementById('btnSearch').addEventListener('click', function() {
+            const input = document.getElementById('conditionInput').value.toLowerCase();
+            let results = [];
+
+            if (input === "beach" || input === "beaches") {
+                results = data.beaches;
+            } else if (input === "temples" || input === "temple") {
+                results = data.temples;
+            } else if (input === "country" || input === "countries") {
+                data.countries.forEach(country => {
+                    country.cities.forEach(city => {
+                        results.push(city);
+                    });
+                });
+            }
+
+            console.log('Search input:', input);
+            console.log('Matching results:', results.length);
+            displayResults(results);
+        });
+
     })
     .catch(error => console.error('Error fetching data:', error));
+
 
 document.getElementById('btnSearch').addEventListener('click', function() {
     const input = document.getElementById('conditionInput').value.toLowerCase();
@@ -88,13 +115,14 @@ function displayResults(results) {
 }
 
 
-    const options = { timeZone: 'Nigeria/Lagos', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    const options = { timeZone: 'Africa/Lagos', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
     const LagosTime = new Date().toLocaleTimeString('en-US', options);
     console.log("Current time in Lagos:", LagosTime);
 
 
 console.log('Search input:', input);
-console.log('Matching results:', results.length);
+console.log('Results:', results);
+
 
 
 
