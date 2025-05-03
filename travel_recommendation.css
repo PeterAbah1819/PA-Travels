@@ -5,7 +5,7 @@
 }
 nav {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.897); /* Dark background with some transparency */
+    background-color: rgba(53, 99, 216, 0.897); /* Dark background with some transparency */
     padding: 10px;
 }
 
