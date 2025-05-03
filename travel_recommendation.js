@@ -16,10 +16,7 @@ document.getElementById('btnReset').addEventListener('click', function() {
 
 
 
-if (!data) {
-    console.error('Data not yet fetched');
-    return;
-}
+
 
 
 
