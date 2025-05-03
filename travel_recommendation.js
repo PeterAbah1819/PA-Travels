@@ -29,6 +29,8 @@ fetch('travel_recommendation_api.json')
     .then(jsonData => {
         data = jsonData;
         console.log(data)
+        document.getElementById('btnSearch').disabled = false;
+        document.getElementById('btnReset').disabled = false;
     })
     .catch(error => console.error('Error fetching data:', error));
 
