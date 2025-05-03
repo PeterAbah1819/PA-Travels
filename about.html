@@ -3,47 +3,155 @@
     <head>
         <meta charset="UTF-8">
         <title>Travel Recommendation</title>
-        <link rel="stylesheet" href="./travels.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            /* Global styles */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4; /* Light background for the body */
+            }
+
+            /* Navigation Bar */
+            nav {
+                background-color: #333; /* Dark background for nav */
+                padding: 10px 0;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 20px;
+            }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                padding: 10px 15px;
+                display: inline-block;
+            }
+
+            nav ul li a:hover {
+                background-color: #575757;
+                border-radius: 5px;
+            }
+
+            /* Header Style */
+            h1 {
+                color: #2c3e50;
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            /* Container with background image */
+            .container {
+                position: relative;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            }
+
+            /* Background Image */
+            .background-image {
+                background-image: url('back.jpeg'); /* Add your background image URL here */
+                background-size: cover;
+                background-position: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0.5;
+            }
+
+            /* Content Section */
+            .content {
+                position: relative;
+                z-index: 1;
+                text-align: center;
+                color: white;
+                padding: 50px;
+                background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+                max-width: 800px;
+                margin: 100px auto;
+                border-radius: 10px;
+            }
+
+            /* Team Members */
+            .team-member {
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            .team-member h3 {
+                color: #e74c3c;
+            }
+
+            .team-member p {
+                color: #ecf0f1;
+                font-size: 16px;
+            }
+
+            /* Add responsive design for mobile */
+            @media (max-width: 768px) {
+                .content {
+                    padding: 20px;
+                }
+
+                nav ul {
+                    flex-direction: column;
+                }
+
+                nav ul li {
+                    margin: 10px 0;
+                }
+            }
+        </style>
     </head>
     <body>
-        
         <nav>
-            
             <ul>
-                <li><h1>TravelBloom</h1></li>
+                <li><h1>PA Travels</h1></li>
                 <li>
-                    <a href="./travel.html" id="home">Home </a>
-                    <a href="./about.html" id="contact">About Us </a>
+                    <a href="./index.html" id="home">Home </a>
+                    <a href="./about.html" id="about">About Us </a>
                     <a href="./contact.html" id="contact">Contact Us </a>
                 </li>
                 <li></li>
             </ul>
         </nav>
-        
+
         <div class="container">
             <div class="background-image"></div>
             <div class="content">
                 <h1>About Us</h1>
-                <p>Welcome to TravelBloom, your ultimate travel companion. We specialize in creating unforgettable travel experiences tailored to your preferences. Our team of passionate travelers is dedicated to helping you explore the world and make memories that last a lifetime.</p>
+                <p>Welcome to PA Travels, your ultimate travel companion. We specialize in creating unforgettable travel experiences tailored to your preferences. Our team of passionate travelers is dedicated to helping you explore the world and make memories that last a lifetime.</p>
                 <h2></h2>
                 
                 <h2>Our Team</h2>
                 <h2></h2>
                 <div class="team-member">
-                    <h3>John Doe</h3>
+                    <h3>Peter Doe</h3>
                     <p>CEO</p>
                 </div>
                 <div class="team-member">
-                    <h3>Jane Smith</h3>
+                    <h3>Jane John</h3>
                     <p>Lead Travel Planner</p>
                 </div>
                 <div class="team-member">
-                    <h3>Michael Johnson</h3>
+                    <h3>Michael Moreson</h3>
                     <p>Marketing Manager</p>
                 </div>
             </div>
         </div>
+
         <script src="./travel_recommendation.js"></script>
     </body>
 </html>
