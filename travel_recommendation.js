@@ -1,5 +1,5 @@
 function thankyou() {
-    alert('Thank you for contacting us!');
+    //alert('Thank you for contacting us!');
     // Optionally reset form
     document.querySelector('form').reset();
 }
