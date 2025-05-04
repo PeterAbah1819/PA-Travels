@@ -66,7 +66,7 @@ fetch('travel_recommendation_api.json')
         });
 
     })
-    .catch(error => console.error("Error fetching data:", error));
+    .catch(error => console.error('Error fetching data:', error));
 
 
 document.getElementById('btnSearch').addEventListener('click', function() {
@@ -75,7 +75,7 @@ document.getElementById('btnSearch').addEventListener('click', function() {
     let results = [];
 
     if (!data) {
-        console.error("Data not yet fetched");
+        console.error('Data not yet fetched');
         return;
     }
 
