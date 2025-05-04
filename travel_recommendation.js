@@ -42,16 +42,11 @@ fetch('travel_recommendation_api.json')
 
             if (input === "beach" || input === "beaches") {
                 results = datas.beaches;
-                results = datas.beach;
             } else if (input === "temples" || input === "temple") {
                 results = datas.temples;
-                results = datas.temple;
             } else if (input === "parks" || input === "parks") {
                 results = datas.parks;
-                results = datas.park;
-            } else if (input === "gardens" || input === "gardens") {
-                results = datas.gardens;
-                results = datas.garden;
+
 
 
 
