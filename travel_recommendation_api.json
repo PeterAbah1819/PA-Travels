@@ -77,6 +77,20 @@
         "imageUrl": "copacabana.jpg",
         "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
       }
+    ],
+        "parks": [
+      {
+        "id": 1,
+        "name": "Lagos, Nigeria",
+        "imageUrl": "bora-bora.jpg",
+        "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+      },
+      {
+        "id": 2,
+        "name": "Ikeja, Lagos",
+        "imageUrl": "copacabana.jpg",
+        "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+      }
     ]
   }
   

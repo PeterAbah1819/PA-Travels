@@ -44,6 +44,13 @@ fetch('travel_recommendation_api.json')
                 results = datas.beaches;
             } else if (input === "temples" || input === "temple") {
                 results = datas.temples;
+            } else if (input === "parks" || input === "parks") {
+                results = datas.parks;
+
+
+
+
+
             } else if (input === "country" || input === "countries") {
                 datas.countries.forEach(country => {
                     country.cities.forEach(city => {
