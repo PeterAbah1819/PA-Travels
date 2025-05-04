@@ -219,5 +219,19 @@ const data = {
       "imageUrl": "copacabana.jpg",
       "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
     }
-  ]
+  ],
+    "gardens": [
+    {
+    "id": 1,
+    "name": "Gwagwalada, Abuja",
+    "imageUrl": "sydney.jpg",
+    "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
+    },
+    {
+    "id": 2,
+    "name": "Nasarawa, Nigeria",
+    "imageUrl": "melbourne.jpg",
+    "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views."
+    }
+    ]
 };
